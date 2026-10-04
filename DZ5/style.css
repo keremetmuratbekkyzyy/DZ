@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+
+.game {
+    width: 900px;
+    height: 690px;
+    background-color: #222222;
+    border: 2px solid #ffd900;
+    box-shadow:
+        0 0 15px #ffd900,
+        0 0 30px #ffd900;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.coins {
+    margin-top: 65px;
+    transform: translateX(-20px);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+
+.coin-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+}
+
+.coin-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cat-button {
+    width: 275px;
+    height: 275px;
+    margin-top: 65px;
+    border-radius: 50%;
+    border: 10px solid #2929e8;
+    background-color: #151c80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.1s;
+}
+
+
+.cat-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cat-button:active {
+    transform: scale(0.92);
+}
+
+.energy {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.energy-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.energy-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 950px) {
+
+    .game {
+        width: 90%;
+        height: 650px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .game {
+        width: 92%;
+        height: 600px;
+
+        border-radius: 20px;
+    }
+
+
+    .coins {
+        margin-top: 50px;
+        font-size: 45px;
+    }
+
+
+    .coin-icon {
+        font-size: 42px;
+    }
+
+
+    .hamster-button {
+        width: 220px;
+        height: 220px;
+        margin-top: 55px;
+    }
+
+
+    .energy {
+        margin-top: 55px;
+        font-size: 45px;
+    }
+
+
+    .energy-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 32px;
+    }
+
+}
